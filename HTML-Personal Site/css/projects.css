@@ -1,5 +1,19 @@
 
-#assista-avatar{
+.job-container{
+
+}
+.job-avatars{
     width:4em;
     height:auto;
   }
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
