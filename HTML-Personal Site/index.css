@@ -3,18 +3,12 @@ html, body {
   margin: 0;
 }
 
-body {
-
-}
-
 header {
   background: yellow;
 }
 
 main {
-  background: pink;
 }
-
 
 footer {
   background: orange;
