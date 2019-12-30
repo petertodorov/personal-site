@@ -7,9 +7,13 @@ header {
   background: yellow;
 }
 
-main {
-}
 
 footer {
   background: orange;
+}
+
+#my-photo{
+  width:4em;
+  height: 4em;
+  border-radius:50%;
 }
