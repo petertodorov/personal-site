@@ -1,19 +1,42 @@
-
-.job-container{
-
+html, body {
+  height: 100%;
+  margin: 0;
 }
-.job-avatars{
-    width:4em;
-    height:auto;
-  }
-  table {
-    border-collapse: collapse;
-    width: 80%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
+
+.job-container {
+  text-align: center;
+}
+
+.employer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
+.job-avatars {
+  width: 4em;
+  height: 4em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1em;
+  background: #ddd;
+  border: 2px solid white;
+}
+
+caption {
+  background: grey;
+  color: white;
+}
+
