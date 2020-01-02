@@ -1,7 +1,45 @@
-.input-container{
-    display:flex;
-    flex-wrap:wrap;
+form{
+    display: flex;
+    flex-direction: column;
+    background: lightskyblue;
+    border-radius:5px;
+    padding:10px;
 }
-.input-container >*{
-    flex: 0 1 60%;
+
+
+fieldset{
+    background: white;
+    border:none;
+}
+.fieldset-container{
+    padding:10px 1px;
+    background: white;
+}
+
+.form-input-container, fieldset {
+    flex: 0 1 auto;
+}
+
+.input-container> *, .fieldset-container {
+   width:60%;
+    border:none;
+    border-radius:5px;
+}
+.input-container{
+    margin: 0 0 10px 0;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:20%;
+    margin: 20px 0 0 0;
+}
+
+input[type=email]{
+    height:20px;
 }
