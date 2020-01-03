@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Peter's personal site</title>
   <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,25 +17,60 @@
   </header>
 
   <main>
-  
-    <p>This will be my <em> <strong>bio</strong></em> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-      officia deserunt mollit anim id est laborum.</p>
+    <div class="bio-container">
+      <h2>Bio</h2>
+        
+      <div class="general-info-container">
 
-    <hr size="3">
-    <h3>What I do</h3>
-    <ul>
-      <li><a href="projects.html" target="_blank" rel="noreferrer noopener">Projects I worked on</a></li>
-      <li><a href="drums.html" target="_blank" rel="noreferrer noopener">Playing percussions</a></li>
-    </ul>
+        <h3>Peter Todorov</h3>
+        <h4>Birthdate: 11/11</h4>
+        <h4>Current location: Sofia,Bulgaria</h4>
+      </div>
 
-    <div><a href="flex.html">Flexy fox</a></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui
+        officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+    <div class="my-works">
+      <div class="works">
+        <h3>What I do</h3>
+        <ul>
+          <li><a href="projects.html" target="_blank" rel="noreferrer noopener">Projects I worked on</a></li>
+          <li><a href="drums.html" target="_blank" rel="noreferrer noopener">Playing percussions</a></li>
+          <li> <a href="flex.html">Flexy fox</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="image-container">
+        <img src="assets/peter.jpg" id="my-photo" alt="Peters' photo">
+
+        <h2>my photo</h2>
+      </div>
+      <div class="image-container">
+        <img src="assets/peter.jpg" id="my-photo" alt="Peters' photo">
+        <h2>my photo</h2>
+      </div>
+      <div class="image-container">
+        <img src="assets/peter.jpg" id="my-photo" alt="Peters' photo">
+        <h2>my photo</h2>
+      </div>
+    </div>
+
   </main>
 
   <footer>
-    <h4><a href="contacts.html">My contacts</a></h4>
+    <h4 class="footer-title"><a href="contacts.html">My contacts</a></h4>
+    <div class="social-media">
+      <h4>Facebook</h4>
+    </div>
   </footer>
 </body>
 
