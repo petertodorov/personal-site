@@ -1,29 +1,49 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+html {
+    background: lightblue;
+    height: 100%;
 }
 
 body {
     display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    height: 100%;
     align-items: center;
-    min-width:100%;
 }
 
-header{
-    min-width:100%;
+header {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: grey;
+    justify-content: center;
 }
 
+.header-title {
+    color: white;
+    width: 100%;
+    margin:1em;
+    text-align:center;
+}
+.nav-container:nth-child(1){
+border-radius: 0 0 0 5px;
+}
 main {
     width: 100%;
     flex: 1;
-    background: orange;
+    background: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-p {
+p, .nav>a {
     font-size: 1vw;
 }
 
@@ -36,6 +56,7 @@ h1 {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    border-radius:5px;
 }
 
 .elements {
@@ -89,7 +110,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
+.commands>p, .boxes>p{
+    margin:1em;
+}
 .nav-container {
     background: pink;
     width: 100%;
@@ -97,7 +120,15 @@ h1 {
 }
 
 .nav {
-flex:1;
+    flex: 1;
+}
+
+.nav>a {
+    display: block;
+    padding: 5% 10%;
+    text-align: center;
+    font-size: 2vw;
+    text-decoration: none;
 }
 
 .bio {
@@ -110,4 +141,26 @@ flex:1;
 
 .gallery {
     background: lightseagreen;
+}
+
+footer{
+    width:100%;
+    background: grey;
+    color:white;
+    text-align:center;
+    border-radius: 5px 5px 0 0;
+}
+footer > p{
+    font-size:2vw;
+}
+@media screen and (max-width:760px) {
+    .nav {
+        flex: 1 1 100%;
+    }
+    .nav-container {
+        flex-wrap: wrap;
+    }
+    .nav>a {
+        padding: 2% 10%;
+    }
 }
